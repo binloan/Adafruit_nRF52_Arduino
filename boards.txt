@@ -60,6 +60,46 @@ feather52832.menu.debug.l3=Level 3 (Segger SystemView)
 feather52832.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 
 # ----------------------------------
+# BL652 Food Sensor nRF52832
+# ----------------------------------
+foodSensorBL652.name=Food Sensor nRF52832
+foodSensorBL652.bootloader.tool=bootburn
+
+# Upload
+foodSensorBL652.upload.tool=nrfutil
+foodSensorBL652.upload.protocol=nrfutil
+foodSensorBL652.upload.use_1200bps_touch=false
+foodSensorBL652.upload.wait_for_upload_port=false
+foodSensorBL652.upload.native_usb=false
+foodSensorBL652.upload.maximum_size=290816
+foodSensorBL652.upload.maximum_data_size=51072
+
+# Build
+foodSensorBL652.build.mcu=cortex-m4
+foodSensorBL652.build.f_cpu=64000000
+foodSensorBL652.build.board=NRF52832_FEATHER
+foodSensorBL652.build.core=nRF5
+foodSensorBL652.build.variant=food_sensor_bl652
+foodSensorBL652.build.extra_flags=-DNRF52832_XXAA -DNRF52
+foodSensorBL652.build.ldscript=nrf52832_s132_v6.ld
+
+# SofDevice Menu
+foodSensorBL652.menu.softdevice.s132v6=0.2.13 SoftDevice s132 6.1.1
+foodSensorBL652.menu.softdevice.s132v6.build.sd_name=s132
+foodSensorBL652.menu.softdevice.s132v6.build.sd_version=6.1.1
+foodSensorBL652.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+
+# Debug Menu
+foodSensorBL652.menu.debug.l0=Level 0 (Release)
+foodSensorBL652.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+foodSensorBL652.menu.debug.l1=Level 1 (Error Message)
+foodSensorBL652.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+foodSensorBL652.menu.debug.l2=Level 2 (Full Debug)
+foodSensorBL652.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+foodSensorBL652.menu.debug.l3=Level 3 (Segger SystemView)
+foodSensorBL652.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+
+# ----------------------------------
 # Bluefruit Feather nRF52840 Express
 # ----------------------------------
 feather52840.name=Adafruit Bluefruit Feather nRF52840 Express
