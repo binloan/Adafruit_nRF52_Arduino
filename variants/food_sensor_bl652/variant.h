@@ -43,9 +43,10 @@ extern "C"
 #define NUM_ANALOG_OUTPUTS   (0u)
 
 // LEDs
-#define PIN_LED1             (3)
+#define PIN_LED1             (10)
 #define PIN_LED2             (15)
 #define PIN_LED3             (4)
+#define PIN_LED4             (3)
 
 #define LED_BUILTIN          PIN_LED1
 #define LED_CONN             PIN_LED2
@@ -53,6 +54,7 @@ extern "C"
 #define LED_RED              PIN_LED1
 #define LED_BLUE             PIN_LED2
 #define LED_YELLOW           PIN_LED3
+#define LED_GREEN            PIN_LED4
 
 #define LED_STATE_ON         1         // State when LED is litted
 
@@ -104,9 +106,15 @@ static const uint8_t AREF = PIN_AREF;
 #define PIN_SPI_MISO         (24)
 #define PIN_SPI_MOSI         (23)
 #define PIN_SPI_SCK          (25)
+#define PIN_SPI_SS           (28)
+#define PIN_SPI_CS_SENSOR    (22)
+#define PIN_SPI_CS_NFC       (28)
+#define PIN_SPI_RST_NFC       (9)
 
-static const uint8_t CS_SENSOR   = 22 ;
-static const uint8_t CS_NFC   = 28 ;
+static const uint8_t SS   = PIN_SPI_SS;
+static const uint8_t CS_SENSOR   = PIN_SPI_CS_SENSOR ;
+static const uint8_t CS_NFC   = PIN_SPI_CS_NFC ;
+static const uint8_t RST_NFC   = PIN_SPI_RST_NFC ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
