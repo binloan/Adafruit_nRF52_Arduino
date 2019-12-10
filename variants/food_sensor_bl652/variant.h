@@ -79,7 +79,7 @@ static const uint8_t A7  = PIN_A7 ;
 #define ADC_RESOLUTION    14
 
 //Hall Sensor
-#define HALL_SENSOR_PIN    PIN_A0
+#define PIN_HALL_SENSOR    PIN_A0
 
 // Other pins
 #define PIN_AREF           (24)
